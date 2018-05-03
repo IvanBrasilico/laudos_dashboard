@@ -10,7 +10,8 @@ setup(
     author_email='brasilico.ivan@gmail.com',
     packages=find_packages(),
     install_requires=[
-        'bokeh'
+        'bokeh',
+        'pandas'
     ],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
