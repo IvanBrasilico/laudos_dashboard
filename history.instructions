@@ -1,0 +1,13 @@
+
+git clone https://github.com/IvanBrasilico/laudos_dashboard.git dashboard/
+cd dashboard
+cp ../../AJNA_MOD/setup.py .
+cp ../../AJNA_MOD/.travis.yml .
+cp ../../AJNA_MOD/tox.ini .
+cp ../../AJNA_MOD/pylintrc .
+cp ../../AJNA_MOD/pytest.ini .
+python3 -m virtualenv venv
+. venv/bin/activate
+# Modificar as configurações do setup.py
+python setup.py develop
+pip install -e .[dev]
